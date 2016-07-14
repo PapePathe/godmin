@@ -30,8 +30,17 @@ class AuthorizationTest < ActionDispatch::IntegrationTest
     assert_equal 403, page.status_code
   end
 
+  # TODO: how do we test these better...
   def test_cannot_index_in_engine?
     visit admin.authorized_articles_path
+    assert_equal 403, page.status_code
+  end
+
+  # TODO: how do we test these better...
+  def test_cannot_show_in_engine?
+    article = Article.create! title: "foo"
+
+    visit admin.authorized_article_path(article)
     assert_equal 403, page.status_code
   end
 end

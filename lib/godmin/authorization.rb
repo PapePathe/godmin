@@ -13,6 +13,10 @@ module Godmin
       end
     end
 
+    def authorize(record, query = nil)
+      super(engine_wrapper.namespaced_path.map(&:to_sym) << record, query)
+    end
+
     def pundit_user
       admin_user
     end

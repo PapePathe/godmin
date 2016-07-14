@@ -1,4 +1,4 @@
-module Admin
-  class Article < ::Article
-  end
-end
+# module Admin
+#   class Article < ::Article
+#   end
+# end
