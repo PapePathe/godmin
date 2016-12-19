@@ -1,0 +1,47 @@
+en:
+  godmin:
+    title: Godmin
+    batch_actions:
+      buttons:
+        select_all: Select all
+        deselect_all: Deselect all
+      confirm_message: Are you sure?
+    filters:
+      select:
+        placeholder:
+          one: Select something
+          many: Select something
+      buttons:
+        apply: Filter
+        clear: Clear filter
+    actions:
+      label: Actions
+      show: Show
+      show_title: Show %{resource}
+      edit: Edit
+      edit_title: Edit %{resource}
+      destroy: Destroy
+      destroy_title: Destroy %{resource}
+      confirm_message: Are you sure?
+      export: Export
+      export_as: As
+    sessions:
+      sign_in: Sign in
+      sign_out: Sign out
+      signed_in: Signed in
+      signed_out: Signed out
+      failed_sign_in: Invalid credentials
+    flash:
+      create: "%{resource} was successfully created"
+      update: "%{resource} was successfully updated"
+      destroy: "%{resource} was successfully destroyed"
+      batch_action: "%{number_of_records} %{resource} were affected"
+    pagination:
+      first: "First"
+      last: "Last"
+      entries:
+        zero: "No %{resource} found"
+        other: "Showing %{count} out of %{total} %{resource}"
+    datetimepickers:
+      datepicker: ! "%d/%m/%Y"
+      datetimepicker: ! "%d/%m/%Y %H:%M"
